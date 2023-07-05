@@ -1,0 +1,35 @@
+.container{
+    background-color: var(--light-gray);
+    border-radius: 100px;
+    width: max-content;
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+    margin-inline: auto;
+}
+
+.button{
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    padding: 8px 24px;
+    border-radius: 100px;
+    cursor: pointer;
+    color: rgb(16, 94, 196);
+    font-weight: 500;
+    transition: background-color .4s ease-out,color .4s ease-out;
+    
+    &:hover{
+        background-color: #bbb;
+        color: var(--dark);
+        transition: background-color .4s ease-out,color .4s ease-out;
+        
+    }
+
+    &.active{
+        background-color: rgb(16, 94, 196);
+        color: white;
+        transition: background-color .4s ease-out, color .4s ease-out;
+    }
+}
